@@ -92,7 +92,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 500px;
 
 }
 .getintouch .heading{
@@ -103,11 +103,12 @@ header {
     padding-bottom: 20px;
 }
 .getintouch form{
-    padding: 30px;
+    margin: 20px;
+    padding: 50px 40px;
     /* color: ; */
     border-radius: 5px;
     /* background-color: rgba(0, 0, 0, 0.904); */
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
