@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EAFDFC;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#name {
+    font-size: 24px;
+    background-color: rgba(17, 204, 241, 0.146);
+    border-radius: 12px;
+    padding: 5px 12px;
+}
+
+.nav {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    letter-spacing: 4px;
+}
+
+#navli {
+    color: #EAFDFC;
+}
+
+.nav li:hover {
+    background-color: rgba(211, 186, 186, 0.043);
+    border-radius: 8px;
+}
+
+.top{
+    height: 95vh;
+    margin-top: 60px;
+    position: relative;
+    color: #EAFDFC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.top .imgcontainer{
+    height: 100%;
+    width: 100%;
+    /* border: 3px solid black; */
+    position: absolute;
+    z-index: -1;
+}
+.top h1{
+    margin-bottom: 200px;
+}
+.top p{
+    width: 800px;
+}
+.top .text{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    padding: 40px;
+}
+.middlebanner{
+    background-image: url("https://i.postimg.cc/vZHpXZzJ/background.webp");
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.middlebanner h2{
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #EAFDFC;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    width: 100%;
+}
+.middle .contain{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    height: 100vh;
+    margin-bottom: 10px;
+}
+.middle .imgcontainer {
+    border-radius: 5px;
+    margin: 40px;
+    overflow: hidden;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.562);
+    margin-top: 0;
+    height: 100%;
+}
+.middle .textcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.middle .text {
+    width: 400px;
+}
+.middle h2{
+    margin-bottom: 40px;
+}
+.middle p{
+    font-size: 14px;
+}
+.contactsec{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #EAFDFC;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(46, 46, 46);
+}
+.contactsec div{
+    padding: 40px;
+    font-size: 30px;
+}
+.contactsec input{
+    width: auto;
+    max-width: 600px;
+    height: 40px;
+    border: none;
+    background: none;
+    color: #EAFDFC;
+}
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+}
+footer .upper{
+    color: #EAFDFC;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    line-height: 25px;
+    font-size: 15px;
+}
+footer .lower{
+    color: #EAFDFC;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer .buttons{
+    display: flex;
+    width: 150px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.terms{
+    display: flex;
+    width: 500px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    .top h1{
+        font-size: 30px;
+        width: auto;
+        min-width: none;
+    }
+    .top .text{
+        width: 100%;
+    }
+    .top p{
+        width: auto;
+    }
+    .contactsec{
+        height: 100px;
+    }
+    .contactsec div{
+        font-size: 18px;
+        padding: 20px;
+    }
+    footer{
+        padding: 0;
+    }
+
+}
+    
+@media screen and (max-width:524px) {
+    .contactsec div{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:478px) {
+    .contactsec div{
+        font-size: 13px;
+    }
+    footer .upper{
+        padding: 20px;
+    }
+    ul{
+        font-size: 12px;
+    }
+    footer .lower{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:580px) {
+    .middle .contain{
+        display: flex;
+        flex-direction: column;
+    }
+    #two{
+        flex-direction: column-reverse;
+    }
+    #four{
+        flex-direction: column-reverse;
+    }
+    .middle .imgcontainer{
+        width: 100%;
+    }
+    .middle .text{
+        width: 100%;
+    }
+}

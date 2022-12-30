@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.first {
+    margin-top: 60px;
+    height: 100vh;
+    position: relative;
+}
+
+.text {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 30% 15% 30% 25%;
+    color: #EAFDFC;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.text .head {
+    font-size: 45px;
+    word-spacing: 8px;
+    letter-spacing: 6px;
+    width: 100%;
+}
+
+.text .body {
+    font-size: 16px;
+    align-items: bottom;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.text .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#name {
+    font-size: 24px;
+    background-color: rgba(17, 204, 241, 0.146);
+    border-radius: 12px;
+    padding: 5px 12px;
+}
+
+.nav {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    letter-spacing: 4px;
+}
+
+#navli {
+    color: #EAFDFC;
+}
+
+.nav li:hover {
+    background-color: rgba(183, 171, 171, 0.043);
+    border-radius: 8px;
+}
+
+.home {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.home p,
+h5 {
+    color: #EAFDFC;
+}
+
+.explorebanner {
+    color: #EAFDFC;
+    font-size: 25px;
+    padding: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 15px;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-caption {
+    top: 50px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.captionbottomcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+
+.captionbottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.captionbottom>div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.captionbottom .head {
+    font-size: 14px;
+}
+
+.captionbottom .body {
+    font-size: 28px;
+}
+
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    z-index: 1;
+}
+
+.w-100 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#butn {
+    color: #EAFDFC;
+    background-color: #0066ba;
+    border: none;
+    width: 110px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 4px 6px;
+    margin-bottom: 15px;
+}
+
+.aboutsec {
+    background-color: #EAFDFC;
+    color: black;
+}
+
+.banner {
+    background-image: url("https://i.postimg.cc/vZHpXZzJ/background.webp");
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.banner .left {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 40px;
+    text-align: center;
+    line-height: 30px;
+    word-spacing: 6px;
+}
+
+.banner .right {
+    padding: 40px 80px;
+    line-height: 30px;
+    word-spacing: 6px;
+}
+
+.mission {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+.mission .left {
+    grid-row: 1/3;
+    margin: 20px 40px 20px 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.562);
+}
+
+.mission .right {
+    text-align: left;
+    grid-column: 2/3;
+    margin: 20px 40px 20px 40px;
+}
+
+.mission .head {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.mission .body {
+    padding: 20px;
+    line-height: 30px;
+    word-spacing: 6px;
+}
+
+.mission .park {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 40px 20px 40px;
+}
+
+.parkimgcontainer {
+    height: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.562);
+}
+
+.power {
+    background-color: #EAFDFC;
+    padding: 10px;
+}
+
+.power .upper {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 20px;
+    align-items: center;
+}
+
+.power .upper .left {
+    padding: 10px;
+}
+
+.upper .right {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.power .head {
+    font-size: 25px;
+}
+
+.power .subhead {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.power .body {
+    font-size: 25px;
+    margin-right: 0;
+    padding-right: 0;
+    font-weight: 500;
+}
+
+.power .lower {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.power .lower div {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.power .lower .caption {
+    margin: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.power .lower .caption2 {
+    margin: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+
+.service {
+    color: #EAFDFC;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.service .upper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 20px;
+    align-items: center;
+}
+
+.service .upper .left {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.service .upper .right {
+    margin-left: 30px;
+}
+
+.service .head {
+    font-size: 25px;
+}
+
+.service .subhead {
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.service .body {
+    font-size: 25px;
+    margin-right: 0;
+    padding-right: 0;
+    font-weight: 500;
+}
+
+.service .lower {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.service .lower div {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.service .lower .caption {
+    margin: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.service .lower .caption2 {
+    margin: 0px;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.contactsec{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #EAFDFC;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(46, 46, 46);
+}
+.contactsec div{
+    padding: 40px;
+    font-size: 30px;
+}
+.contactsec input{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background: none;
+    color: #EAFDFC;
+}
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer .upper{
+    color: #EAFDFC;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    line-height: 25px;
+    font-size: 15px;
+}
+footer .lower{
+    color: #EAFDFC;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer .buttons{
+    display: flex;
+    width: 150px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.terms{
+    display: flex;
+    width: 500px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width:900px) {
+    .carousel-caption {
+        top: 70px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .carousel-caption p {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #butn {
+        font-size: 13px;
+        width: 90px;
+    }
+
+    .captionbottom>div {
+        width: 100px;
+    }
+
+    .captionbottom .head {
+        font-size: 10px;
+    }
+
+    .captionbottom .body {
+        font-size: 14px;
+    }
+
+    .first .text .head{
+        font-size: 35px;
+    }
+
+    .first .text .body{
+        font-size: 14px;
+    }
+
+    .first .text .footer{
+        font-size: 14px;
+    }
+
+    .explorebanner{
+        font-size: 20px;
+    }
+
+    .banner .left {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .banner .right {
+        padding: 20px 40px;
+        font-size: 14px;
+    }
+    
+    .mission .left {
+        margin: 10px 20px 10px 20px;
+    }
+    
+    .mission .right {
+        margin: 10px 20px 10px 20px;
+    }
+    
+    .mission .head {
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .mission .body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .mission .park {
+        font-size: 14px;
+    }
+    
+    .power .upper {
+        padding: 10px;
+    }
+    
+    .power .head {
+        font-size: 19px;
+    }
+    
+    .power .subhead {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .power .body {
+        font-size: 19px;
+    }
+    
+    .power .lower .caption {
+        font-size: 12px;
+    }
+    
+    .power .lower .caption2 {
+        font-size: 12px;
+    }
+    
+    .service {
+        margin-bottom: 30px;
+    }
+    
+    .service .upper {
+        padding: 10px;
+    }
+    
+    .service .upper .right {
+        margin-left: 20px;
+    }
+    
+    .service .head {
+        font-size: 19px;
+    }
+    
+    .service .subhead {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .service .body {
+        font-size: 19px;
+    }
+ 
+    .service .lower .caption {
+        font-size: 12px;
+    }
+    
+    .service .lower .caption2 {
+        font-size: 12px;
+    }
+    
+    .contactsec{
+        height: 150px;
+    }
+
+    .contactsec div{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .contactsec input{
+        width: auto;
+        height: 30px;
+    }
+
+    footer{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    footer .upper{
+        padding: 20px;
+        font-size: 13px;
+    }
+
+    footer .buttons{
+        width: 150px;
+        height: 60px;
+    }
+    .terms{
+        width: 300px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .mission{
+        display: flex;
+        flex-direction: column;
+    }
+    .mission .park{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .power .upper{
+        display: flex;
+        flex-direction: column;
+    }
+    .power .lower{
+        display: flex;
+        flex-direction: column;
+    }
+    .power .lower div{
+        margin: 10px 0px;
+    }
+    .service .upper{
+        display: flex;
+        flex-direction: column;
+    }
+    .service .lower{
+        display: flex;
+        flex-direction: column;
+    }
+    .service .lower div{
+        margin: 10px 0px;
+    }
+    .contactsec div {
+        font-size: 16px;
+    }
+    .service{
+        padding: 10px 0px;
+    }
+    .service .lower{
+        padding: 20px;
+    }
+}

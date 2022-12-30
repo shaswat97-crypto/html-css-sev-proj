@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EAFDFC;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#name {
+    font-size: 24px;
+    background-color: rgba(17, 204, 241, 0.146);
+    border-radius: 12px;
+    padding: 5px 12px;
+}
+
+.nav {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navbar-brand {
+    letter-spacing: 4px;
+}
+
+#navli {
+    color: #EAFDFC;
+}
+
+.nav li:hover {
+    background-color: rgba(211, 186, 186, 0.043);
+    border-radius: 8px;
+}
+
+.top{
+    height: 95vh;
+    margin-top: 60px;
+    position: relative;
+    color: #EAFDFC;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    text-align: left;
+    position: relative;
+    background-image: url("https://i.postimg.cc/TwZmw1kB/the-road-1420605-1280.jpg");
+}
+.top .overlay{
+    position: absolute;
+    background-color: black;
+    opacity: .5;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+}
+.top h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    width: 800px;
+}
+.top input{
+    border: none;
+    height: 60px;
+    min-width: 150px;
+    width: 400px;
+}
+.top input::placeholder{
+    color: black;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.top .text{
+    z-index: 1;
+    margin-left: 50px;
+}
+.middlebanner{
+    background-image: url("https://i.postimg.cc/vZHpXZzJ/background.webp");
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.middlebanner h2{
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #EAFDFC;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 4px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.cardcontainer{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-around;
+    height: 80vh;
+}
+.card{
+    padding: 20px;
+    padding-right: 40px;
+    padding-top: 40px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.486);
+    margin: 20px;
+    max-width: 340px;
+}
+.cardcontainer img{
+   object-fit: contain;
+}
+.cardimg{
+    margin-left: 35px;
+    margin-bottom: 20px;
+    height: 35px;
+    width: 35px;
+}
+.card .head{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card li{
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.getintouch{
+    height: 100vh;
+    margin-bottom: 20px;
+}
+.getcontainer{
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.getintouch .leftcontain{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buton{
+    background-color: #EAFDFC;
+    width: 100px;
+    padding: 5px 10px;
+    border: none;
+    margin-left: 40%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.getintouch .leftcontain > div{
+    height: 200px;
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.562);
+    margin-bottom: 10px;
+}
+.getintouch .getimg{
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    /* display: block; */
+}
+.getintouch .head{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.getintouch li{
+    /* margin-bottom: 5px; */
+}
+.getintouch .getimg img{
+    object-fit: contain;
+}
+.getintouch ul{
+    padding: 0;
+}
+.getintouch .right{
+    /* height: 100%; */
+}
+.getintouch form{
+    padding: 30px;
+    color: #EAFDFC;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.getintouch form label{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.getintouch form input{
+    padding: 8px;
+}
+.getintouch form > div{
+    display: flex;
+    flex-direction: column;
+}
+.contactsec{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #EAFDFC;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(46, 46, 46);
+}
+.contactsec div{
+    padding: 40px;
+    font-size: 30px;
+}
+.contactsec input{
+    width: auto;
+    max-width: 600px;
+    height: 40px;
+    border: none;
+    background: none;
+    color: #EAFDFC;
+}
+footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+}
+footer .upper{
+    color: #EAFDFC;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    line-height: 25px;
+    font-size: 15px;
+}
+footer .lower{
+    color: #EAFDFC;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer .buttons{
+    display: flex;
+    width: 150px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.terms{
+    display: flex;
+    width: 500px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    .top h1{
+        font-size: 40px;
+        width: auto;
+    }
+    .top input{
+        height: 40px;
+    }
+    .top input::placeholder{
+        font-size: 16px;
+    }
+    .middlebanner h2{
+        font-size: 25px;
+    }
+    .getintouch li{
+        font-size: 14px;
+    }
+    .card li{
+        font-size: 12px;
+    }
+    .card .head{
+        font-size: 16px;
+    }
+    .card{
+        margin: 10px;
+        padding: 10px;
+    }
+    .contactsec{
+        height: 100px;
+    }
+    .contactsec div{
+        font-size: 18px;
+        padding: 20px;
+    }
+    footer{
+        padding: 0;
+    }
+    form label{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .cardcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .card{
+        width: 300px;
+        align-items: center;
+        text-align: center;
+    }
+    .card ul{
+        padding: 0;
+        /* font-size: 14px; */
+    }
+    .cardimg{
+        margin: 10px;
+    }
+    .card li{
+        font-size: 14px;
+    }
+
+    .card .head{
+        font-size: 20px;
+    }
+    .getintouch{
+        height: auto;
+    }
+    .getcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .getintouch .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:524px) {
+    .contactsec div{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:478px) {
+    .top input{
+        min-width: 250px;
+        width: auto;
+    }
+    .contactsec div{
+        font-size: 13px;
+    }
+    footer .upper{
+        padding: 20px;
+    }
+    ul{
+        font-size: 12px;
+    }
+    footer .lower{
+        font-size: 13px;
+    }
+}
