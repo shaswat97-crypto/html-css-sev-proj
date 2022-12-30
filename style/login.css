@@ -51,175 +51,69 @@ header {
     border-radius: 8px;
 }
 
-.top{
-    height: 95vh;
-    margin-top: 60px;
-    position: relative;
-    color: #EAFDFC;
+.rightcontain{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    text-align: left;
-    position: relative;
-    background-image: url("https://i.postimg.cc/TwZmw1kB/the-road-1420605-1280.jpg");
-}
-.top .overlay{
-    position: absolute;
-    background-color: black;
-    opacity: .5;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-}
-.top h1{
-    font-size: 80px;
-    margin-bottom: 20px;
-    letter-spacing: 1.5px;
-    word-spacing: 4px;
-    width: 800px;
-}
-.top input{
-    border: none;
-    height: 60px;
-    min-width: 150px;
-    width: 400px;
-}
-.top input::placeholder{
-    color: black;
-    font-size: 20px;
-    padding-left: 20px;
-}
-.top .text{
-    z-index: 1;
-    margin-left: 50px;
-}
-.middlebanner{
-    background-image: url("https://i.postimg.cc/vZHpXZzJ/background.webp");
-    height: 150px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-}
-.middlebanner h2{
-    font-weight: 400;
-    background-color: rgba(0, 0, 0, 0.904);
-    color: #EAFDFC;
-    text-align: center;
-    letter-spacing: 1.5px;
-    word-spacing: 4px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 0;
-    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.cardcontainer{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-content: space-around;
-    height: 80vh;
-}
-.card{
-    padding: 20px;
-    padding-right: 40px;
-    padding-top: 40px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.486);
-    margin: 20px;
-    max-width: 340px;
-}
-.cardcontainer img{
-   object-fit: contain;
-}
-.cardimg{
-    margin-left: 35px;
-    margin-bottom: 20px;
-    height: 35px;
-    width: 35px;
-}
-.card .head{
-    font-size: 25px;
-    font-weight: 500;
-}
-.card li{
-    font-size: 15px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
 .getintouch{
+    margin-top: 60px;
     height: 100vh;
-    margin-bottom: 20px;
 }
 .getcontainer{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
 }
+.getintouch .left{
+    height: 100vh;
+}
 .getintouch .leftcontain{
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 648px;
 }
 #buton{
-    background-color: #EAFDFC;
-    width: 100px;
-    padding: 5px 10px;
+    color: #EAFDFC;
+    background-color: black;
+    /* width: 100px; */
+    padding: 10px 10px;
     border: none;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     border-radius: 5px;
     margin-top: 20px;
 }
-.getintouch .leftcontain > div{
-    height: 200px;
-    width: 300px;
-    border: 1px solid black;
+
+.getintouch .right{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.562);
-    margin-bottom: 10px;
+    width: 400px;
+
 }
-.getintouch .getimg{
-    height: 25px;
-    width: 25px;
-    margin-bottom: 10px;
-    /* display: block; */
-}
-.getintouch .head{
-    font-size: 22px;
+.getintouch .heading{
+    font-size: 35px;
     font-weight: 500;
-    margin-bottom: 10px;
+    letter-spacing: 3px;
     text-align: center;
-}
-.getintouch li{
-    /* margin-bottom: 5px; */
-}
-.getintouch .getimg img{
-    object-fit: contain;
-}
-.getintouch ul{
-    padding: 0;
-}
-.getintouch .right{
-    /* height: 100%; */
+    padding-bottom: 20px;
 }
 .getintouch form{
     padding: 30px;
-    color: #EAFDFC;
+    /* color: ; */
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.904);
-    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.904); */
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border: 1px solid black;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.562);
+
 }
 .getintouch form label{
     margin-bottom: 5px;
@@ -228,9 +122,13 @@ header {
 .getintouch form input{
     padding: 8px;
 }
+.getintouch form input::placeholder{
+    vertical-align: middle;
+}
 .getintouch form > div{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 .contactsec{
     display: grid;
