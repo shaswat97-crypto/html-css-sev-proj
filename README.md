@@ -1,7 +1,7 @@
 
 <h4 align="left">Demo website for an ev company</h4>
 
-![screenshot](https://github.com/shaswat97-crypto/github-scrapper/blob/master/gif/ezgif.com-gif-maker.gif)
+![screenshot](https://github.com/shaswat97-crypto/media/blob/master/sevgif.gif)
 
 ## Key Features
 
